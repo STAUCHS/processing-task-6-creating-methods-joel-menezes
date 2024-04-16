@@ -6,7 +6,7 @@ public class Sketch extends PApplet {
   int intEntities;
 
   /**
-   * A program that uses methods to draw flowers and cirlces
+   * A program that uses methods to draw flowers and
    * 
    * @author: Joel Menezes
    */
