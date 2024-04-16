@@ -6,9 +6,12 @@ public class Sketch extends PApplet {
   int intEntities;
 
   /**
-   * Called once at the beginning of execution, put your size all in this method
+   * A program that uses methods to draw flowers and cirlces
+   * 
+   * @author: Joel Menezes
    */
   public void settings() {
+
     size(400, 400);
   }
 
@@ -17,6 +20,7 @@ public class Sketch extends PApplet {
    * values here i.e background, stroke, fill etc.
    */
   public void setup() {
+
     background(210, 255, 173);
     noLoop();
     surface.setResizable(true);
@@ -26,6 +30,7 @@ public class Sketch extends PApplet {
    * Called repeatedly, anything drawn to the screen goes here
    */
   public void draw() {
+
     Random myRandom = new Random();
     noStroke();
     for (int intExtraCircles = 0; intExtraCircles <= 105; intExtraCircles++) {
@@ -66,6 +71,7 @@ public class Sketch extends PApplet {
    * @author Joel Menezes
    */
   private boolean checkEntities(int intAmountEntities) {
+
     if (intAmountEntities % 2 == 0) {
       return true;
     } else {
@@ -88,6 +94,7 @@ public class Sketch extends PApplet {
    */
 
   private void drawCircles(int intRed, int intGreen, int intBlue, int intSize, int intPositionX, int intPositionY) {
+
     fill(intRed, intBlue, intGreen);
     circle(intPositionX, intPositionY, intSize);
   }
@@ -130,7 +137,6 @@ public class Sketch extends PApplet {
     circle(0, 0, 60);
 
     resetMatrix();
-
   }
 
 }
